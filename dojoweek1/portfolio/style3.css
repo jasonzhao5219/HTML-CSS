@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#topheader1{
+	height: 40px;
+	width:500px;
+	vertical-align: top;
+	/*vertical-align: top-left;*/
+	display: inline-block;
+	background-color: #E0E5D4;
+	font-size: 30px;
+	padding-top: 10px;
+/*	margin-right: 0px;
+	margin: 0px;*/
+}
+#topheader2{
+	height: 40px;
+	width:390px;
+	/*vertical-align: top-left;*/
+	display: inline-block;
+	font-size:22px;
+	background-color:#E0E5D4;
+	padding-top:10px;
+
+/*	margin-left:0px;
+	padding-left:0px;
+	margin:0px;*/
+}
+#facephoto{
+	 border: 6px solid #777;
+
+	 display: inline-block;
+}
+#div1{
+	display: inline-block;
+	margin-right: 0px;
+}
+#PersonalState{
+	height:250px;
+	width: 410px;
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 30px;
+	
+vertical-align: top;
+}
+#header1{
+	margin-left: 5px;
+	color: white;
+	background-color: #ACB7A9;
+	height: 50px;
+	width: 400px;
+}
+#pid{
+	color:white;
+	background-color: #D6C6D5;
+	width: 400px;
+	height: 210px;
+	margin-left: 4px;
+
+}
+#laMode{
+	display: inline-block;
+	width: 280px;
+	height: 150px;
+	margin-left: 0px;
+	border-image: none;
+	margin-top: 20px;
+}
+#FamilyContact{
+	display: inline-block;
+	width: 280px;
+	height: 150px;
+	margin-left: 4px;
+}
+#FiveEleven{
+	display: inline-block;
+	width: 280px;
+	height: 150px;
+	margin-left: 6px;
+
+}
+#header2{margin-left: 0px;
+	color: white;
+	background-color: #ACB7A9;
+	height: 50px;
+	width: 280px;
+	margin-right: 10px;
+
+}
+#icons{
+	background-color: #7FFFD4;
+	width:280px;
+	height: 130px;
+}
+#submit{
+	background-color: green;
+	border-radius:10px;
+	height: 30px;
+	border: 3px solid #20B2AA;
+
+	margin: 30px 100px;
+}
+
+#pid2{
+	color:white;
+	background-color: #D6C6D5;
+	width: 280px;
+	height: 150px;
+}
+	#wrapper{
+		width: 860px;
+	height: 820px;
+ background-color: black;
+ margin: 0px;
+ padding: 15px;
+ position:relative;
+ vertical-align: top;
+ background: -o-linear-gradient(black,grey,black);
+ background: -moz-linear-gradient(black,grey,black);
+ background: -webkit-linear-gradient(black, grey,black);
+background: linear-gradient(black,grey,black);
+}
+.img1{
+	vertical-align:bottom; display:block;
+}
+
+
