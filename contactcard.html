@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Codingdojo Contact Page</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script type="text/javascript">
+	    	$(document).ready(function(){
+	    		//$('button').click(function(){
+				 //   $('div').append("<h1></h1>");
+				//});
+				
+				$('button').click(function(){
+					var result=$( ".input3").val();
+					//console.log(result);
+				    $('h1').after("<div id = 'card'><p id = 'front'> click for the descrption </p><p id = 'back'> " + result +"</p></div>");
+				    // document.writeln();
+				  
+				    $('h1').after( function(){
+				    	var getval2=$( ".input2").val() ;
+						//console.log(getval2);
+						return getval2;
+				    });
+				    $('h1').after( function(){
+				    	var getval2=$( ".input1").val() ;
+						
+						return getval2;
+						
+				    });
+				 
+	    			
+				  	
+				           //console.log(result);
+				    //$('.pp1').append("<div class="dis2">Click for description!</div>");
+			   		
+	    		});
+
+	    		$(document).on('click', '#dynamic', function(result){
+	    			$("#card").children().toggle();
+	    			
+
+	    		});
+        	});
+
+	    	
+	    </script>
+	    <style type="text/css">
+	         *{
+	             font-family: sans-serif;
+	            margin: 0;
+				padding: 0;
+	          }
+	          .input3{
+	          	height: 60px;
+	          	width: 300px;
+
+	          }
+	          input{
+				font-size: 90%;
+				margin-top: 10px;
+				height: 30px;
+				width: 200px;
+				border:2px solid black;
+				
+		
+			
+
+				}
+				button{
+					border:2px solid black;
+					height: 30px;
+					width: 100px;
+					margin-left: 100px;
+					border-radius: 8px;
+					background-color: grey;
+					margin-top: 20px;
+				}
+				#dynamic{
+					font-size: 130%;
+					display: inline-block;
+				}
+          		form{
+          			display: inline-block;
+          			margin-left: 60px;
+          			vertical-align: top;
+          		}
+          		button{
+          			
+          			vertical-align: top;
+          			display: block;
+          		}
+          		#left{
+          				display: inline-block;
+          			margin-left: 60px;
+          			vertical-align: top;
+          		}
+          		a{
+          			display: block;
+          		}
+          		#back{
+          			display: none;
+          		}
+      	</style>
+	</head>
+	<body>
+		<div id="left">
+			<form>
+				First Name: <input type="text" name="firstname" class="input1" value="firstname ">
+				
+				<br>
+				Last Name: <input type="text" name="lastname" class="input2" value="lastname "><br>
+				Description: <br><input type="text" name="emailadress" class="input3" value="Enter description"><br>
+				
+			</form>
+			<button>Add User</button>
+		</div>
+		<div id="dynamic">
+				<h1></h1>
+				<br>
+				<h5></h5>
+		</div>
+		
+		
+		
+	</body>
+</html>
