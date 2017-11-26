@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Users</title>
+		<link rel="stylesheet" type="text/css" href="user.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	</head>
+	<body>
+		<div id="header">
+			<div class="firstname">First Name :</div>
+			<div class="lastname">Last Name :</div>
+			<div class="emailadress">Email Adress :</div>
+			<div class="contact">Contact # :</div>
+		</div>
+		<Br>
+		<br>
+		<br>
+		<h2>Add User</h2>
+		<div id="divider"></div>
+		<form>
+			First Name: <input type="text" name="firstname" class="input1" value="First Name"><br>
+			Last Name: <input type="text" name="lastname" class="input2" value="Last Name"><br>
+			Email-Adress: <input type="text" name="emailadress" class="input3" value="Email Adress"><br>
+			Contact No: <input type="text" name="Contact" class="input4" value="Contact No">
+		</form>
+		<button>Add User</button>
+		<script type="text/javascript">
+			//var getval2=$( ".input1").val() ;
+		
+			$('button').click(function(){
+				$("#header").after(function(){
+					var getval2=$( "form").children("input").val() ;
+					console.log(getval2);
+					return getval2;
+				});
+				});
+			/*$('button').click(function(){
+				$(".lastname").append(function(){
+					var getval2=$( ".input2").val() ;
+					return getval2;
+				});
+				});
+			$('button').click(function(){
+				$(".emailadress").append(function(){
+					var getval2=$( ".input3").val() ;
+					return getval2;
+				});
+				});
+			$('button').click(function(){
+				$(".contact").append(function(){
+					var getval2=$( ".input4").val() ;
+					return getval2;
+				});
+				});*/
+		</script>
+	</body>
+</html>
